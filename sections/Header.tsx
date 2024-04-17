@@ -51,7 +51,7 @@ export default function Haader({
       { label: "Preços", url: "/" },
     ],
     buttons: [
-      { id: "login", href: "/", text: "Entrar", primary: false },
+      { id: "login", href: "https://app.bettershop.ai/", text: "Entrar", primary: false },
       { id: "get-started", href: "/", text: "Comece agora", primary: true },
     ],
   },
@@ -122,7 +122,7 @@ export default function Haader({
                       id={item?.id}
                       href={item?.href}
                       target={item?.href.includes("http") ? "_blank" : "_self"}
-                      class={`font-normal btn btn-primary ${item.outline && "btn-outline"
+                      class={`font-normal btn btn-primary ${item.primary && "btn-outline"
                         }`}
                     >
                       {item?.text}
